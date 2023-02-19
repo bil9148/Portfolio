@@ -1,344 +1,35 @@
+html {
+    height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: #555555 #000000;
+}
+
 body {
     background-image: url("../resources/bgcp-scaled.jpg");
-    background-position: left top;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    line-height: 35px;
+    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
-/*@media only screen and (max-width: 600px) {
-    main {
-        margin-top: 10%;
-        margin-left: 5%;
-        margin-right: 5%;
-        z-index: 0;
+@media (min-width: 767px) {
+    .container-md {
+        max-width: 600px !important;
     }
 }
 
-@media only screen and (min-width: 600px) {
-    main {
-        margin-top: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
-        z-index: 0;
+@media (min-width: 900px) {
+    .container-md {
+        max-width: 750px !important;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    main {
-        margin-top: 5%;
-        margin-left: 15%;
-        margin-right: 15%;
-        z-index: 0;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    main {
-        margin-top: 2.5%;
-        margin-left: 20%;
-        margin-right: 20%;
-        z-index: 0;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    main {
-        margin-top: 2.5%;
-        margin-left: 25%;
-        margin-right: 25%;
-        z-index: 0;
-    }
-} */
-
-@media only screen and (max-width: 600px) {
-    main {
-        margin-top: 10%;
-        margin-left: 5%;
-        margin-right: 5%;
-        z-index: 0;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    h3 {
-        font-size: 22px;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    main {
-        margin-top: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
-        z-index: 0;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    h3 {
-        font-size: 22px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    main {
-        margin-top: 5%;
-        margin-left: 15%;
-        margin-right: 15%;
-        z-index: 0;
-    }
-
-    p {
-        font-size: 18px;
-    }
-
-    h2 {
-        font-size: 32px;
-    }
-
-    h3 {
-        font-size: 26px;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    main {
-        margin-top: 2.5%;
-        margin-left: 20%;
-        margin-right: 20%;
-        z-index: 0;
-    }
-
-    p {
-        font-size: 20px;
-    }
-
-    h2 {
-        font-size: 36px;
-    }
-
-    h3 {
-        font-size: 28px;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    main {
-        margin-top: 2.5%;
-        margin-left: 25%;
-        margin-right: 25%;
-        z-index: 0;
-    }
-
-    p {
-        font-size: 22px;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-
-    h3 {
-        font-size: 32px;
-    }
-}
-
-h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 5px;
-}
-
+h2,
 h3 {
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 5px;
-}
-
-p {
-    text-align: left;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 50px;
-    margin: 40px;
-    gap: 10px;
-}
-
-.button {
-    width: 100px;
-    height: 45px;
-    color: white;
-    cursor: pointer;
-    background-color: rgb(43, 44, 51);
-    border: none;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-    padding: 0 10px 0 10px;
-    margin-right: 10px;
-}
-
-.button:hover {
-    color: rgb(0, 183, 255);
-    background-color: rgb(27, 27, 27);
-}
-
-a {
-    color: rgba(255, 0, 0, 0.616);
-}
-
-a:hover {
-    color: red;
-}
-
-header {
-    width: 100%;
-    margin-top: 1%;
-}
-
-
-/* HEADER */
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 60px;
-    padding-right: 20px;
-}
-
-.burger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 25px;
-    height: 15px;
-    cursor: pointer;
-    margin-right: 1.2%;
-    border: 1.5px solid rgba(182, 18, 18, 0.586);
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.burger:hover {
-    border-color: red;
-}
-
-#line1 {
-    width: 100%;
-    height: 2px;
-    background-color: rgba(255, 0, 0, 0.616);
-}
-
-#line2 {
-    width: 75%;
-    height: 2px;
-    background-color: rgba(255, 0, 0, 0.616);
-}
-
-#line3 {
-    width: 50%;
-    height: 2px;
-    background-color: rgba(255, 0, 0, 0.616);
-}
-
-#cross {
-    width: 25px;
-    height: 25px;
-    position: relative;
-    display: none;
-}
-
-#cross::before,
-#cross::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: rgb(255, 0, 0);
-    top: calc(50% - 1px);
-    left: 0;
-}
-
-#cross::before {
-    transform: rotate(45deg);
-}
-
-#cross::after {
-    transform: rotate(-45deg);
-}
-
-.links {
-    display: none;
-}
-
-#links.active {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    background-color: rgba(252, 10, 10, 0.01);
-    width: 100%;
-}
-
-#links a {
-    margin-bottom: 20px;
-    text-decoration: none;
-    text-align: center;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s ease;
-}
-
-#links a:hover {
-    border-bottom: 1px solid red;
-}
-
-#home-button {
-    display: inline-block;
-    position: absolute;
-    left: 10px;
-    top: 55px;
-    transform: translateY(-50%);
-}
-
-#home-button img {
-    height: 50px;
-    width: auto;
-    opacity: 85%;
-}
-
-#home-button img:hover {
-    opacity: 100%;
 }
 
 .coverImage {
@@ -353,4 +44,28 @@ header {
 .workSection {
     text-align: center;
     display: none;
+}
+
+#blob {
+    display: none;
+    background-color: rgba(255, 0, 0, 0.405);
+    height: 200px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    z-index: -1;
+    animation: rotate 20s infinite;
+    filter: blur(200px);
+}
+
+#container {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top:0;
 }

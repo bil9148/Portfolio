@@ -1,0 +1,117 @@
+@media (max-width: 767px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        width: auto;
+        text-align: center;
+    }
+
+    .active-page {
+        border-bottom: 3px solid rgb(0, 204, 255);
+    }
+}
+
+@media (min-width: 768px) and (hover: hover) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .active-page {
+        border-right: 2px solid rgb(0, 204, 255);
+    }
+
+    nav ul li {
+        transition: all .4s ease-out;
+    }
+
+    nav ul li:after {
+        position: absolute;
+        background: white;
+        color: crimson;
+        top: 0;
+        left: 70px;
+        width: 80px;
+        height: 100%;
+        opacity: .5;
+        transform: perspective(400px) rotateY(90deg);
+        transform-origin: 0 100%;
+        transition: all .4s ease-out;
+    }
+
+    nav ul a:nth-child(1) li:after {
+        content: "Home";
+        line-height: 88px;
+    }
+
+    nav ul a:nth-child(2) li:after {
+        content: "Work";
+        line-height: 88px;
+    }
+
+    nav ul a:nth-child(3) li:after {
+        content: "About";
+        line-height: 85px;
+    }
+
+    nav ul a:nth-child(4) li:after {
+        content: "Contact";
+        line-height: 70px;
+    }
+
+    nav ul li:hover {
+        transform: translateX(-70px);
+    }
+
+    nav ul li:hover:after {
+        opacity: 1;
+        transform: perspective(400px) rotateY(0deg) scale(1);
+    }
+}
+
+nav ul img {
+    position: relative;
+    top: 7.5px;
+}
+
+nav {
+    position: absolute;
+    left: 0 !important;
+    top: 0 !important;
+    background: transparent;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+nav ul li>div {
+    display: inline-block;
+    margin-top: 10px;
+    background: transparent;
+}
+
+nav ul li div {
+    position: relative;
+}
+
+nav ul li {
+    position: relative;
+    width: 70px;
+    height: 60px;
+    cursor: pointer;
+    background: rgba(255, 0, 0, 0.752);
+    text-transform: uppercase;
+}

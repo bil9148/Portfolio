@@ -3,50 +3,80 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Andre | Portfolio</title>
   <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" href="styles/nav.css" />
   <link rel="icon" type="image/png" href="resources/abl.png">
+  <script src="javascript/bootstrap/jquery.js"></script>
+  <script src="javascript/bootstrap/bootstrap.bundle.js"></script>
 </head>
 
 <body>
   <header>
-    <a href="index.html" id="home-button">
-      <img src="resources/abl.png" alt="Home">
-    </a>
-
-    <div class="navbar">
-      <div class="burger" onclick="toggleMenu()">
-        <div id="line1"></div>
-        <div id="line2"></div>
-        <div id="line3"></div>
-        <div id="cross"></div>
-      </div>
-      <div class="links" id="links">
-        <a href="index.html">Home</a>
-        <a href="work.html">Work</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-
+    <nav>
+      <ul>
+        <a href="index.html">
+          <li>
+            <!-- https://www.flaticon.com/free-icon/home_25694?term=home&page=1&position=2&origin=search&related_id=25694 -->
+            <img src="resources/home.png" alt="Home icon" width="65%">
+            </div>
+          </li>
+        </a>
+        <a href="work.html">
+          <li class="active-page">
+            <!-- https://www.flaticon.com/free-icon/suitcase_2910791?term=work&page=1&position=3&origin=tag&related_id=2910791 -->
+            <img src="resources/suitcase.png" alt="Work icon" width="60%">
+          </li>
+        </a>
+        <a href="about.html">
+          <li>
+            <!-- https://www.flaticon.com/free-icon/info_471713?term=info&page=1&position=9&origin=search&related_id=471713 -->
+            <img src="resources/info.png" alt="Info icon" width="60%">
+          </li>
+        </a>
+        <a href="contact.html">
+          <li>
+            <!-- https://www.flaticon.com/free-icon/email_542689?term=mail&page=1&position=2&origin=search&related_id=542689 -->
+            <img src="resources/email.png" alt="Email icon" width="60%">
+          </li>
+        </a>
+      </ul>
+    </nav>
   </header>
-  <main id="main">
+  <div id="container">
+    <div id="blob"></div>
+  </div>
+  <main>
     <article>
-      <h3>FamTruck</h3>
       <section id="famtruck">
-        <img src="resources/famtruckCover.jpg" class="coverImage" onclick="showWork(this)"
+        <h2>FamTruck</h2>
+        <img src="resources/famtruckCover.jpg" class="coverImage opacity-75" onclick="showWork(this)"
           alt="Picture of an electric truck">
       </section>
       <section class="workSection" id="famtruckS">
+        <h2>FamTruck</h2>
         <img src="resources/famtruck1.jpeg" class="coverImage" onclick="showCover(this)"
           alt="Example website that I built about the electric truck picture one">
         <img src="resources/famtruck2.jpeg" class="coverImage" onclick="showCover(this)"
           alt="Example website that I built about the electric truck picture two">
       </section>
     </article>
+    <article>
+      <section>
+        <h2>LD2 Survey</h2>
+      </section>
+      <section>
+        <h2>LD2 Survey</h2>
+      </section>
+    </article>
+
   </main>
-  <script src="javascript/burger.js"></script>
-  <script src="javascript/work.js"></script>
 </body>
+<script src="javascript/effect.js"></script>
+<script src="javascript/classes.js"></script>
+<script src="javascript/blob.js"></script>
+<script src="javascript/work.js"></script>
 
 </html>
