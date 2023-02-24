@@ -1,0 +1,4 @@
+-image size
+-script loading
+
+https://gtmetrix.com/reports/itsandre.com/fiolMw06/

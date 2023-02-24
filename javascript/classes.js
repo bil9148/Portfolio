@@ -1,6 +1,7 @@
 //General
 $("section").addClass("text-center text-light my-5");
 $("h2").addClass("fit-content font-monospace m-auto");
+$("h1").addClass("fit-content font-monospace m-auto opacity-50");
 $("main").addClass("container-md");
 
 const nav = document.querySelector("nav ul");
